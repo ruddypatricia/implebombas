@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- Documento HTML5 -->
+<html lang="es">
+<!-- Idioma del documento: español -->
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Permite el uso correcto de caracteres especiales como tildes y ñ -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Hace que la página sea responsive (adaptable a móviles y tablets) -->
+
+  <title>PRESUPUESTO</title>
+  <!-- Título que aparece en la pestaña del navegador -->
+
+  <link rel="stylesheet" href="../css/estilos.css">
+  <!-- Enlace al archivo CSS externo -->
+</head>
+
+<body>
+
+  <nav aria-label="Menu principal">
+    <!-- Menú de navegación principal -->
+
+    <ul>
+      <!-- Lista no ordenada con enlaces del menú -->
+
+      <li><a href="index.html">Inicio</a></li>
+      <!-- Enlace a la página de inicio -->
+
+      <li><a href="productos.html">Productos</a></li>
+      <!-- Enlace a la página de productos -->
+
+      <li><a href="presupuesto.html" class="active">Presupuesto</a></li>
+      <!-- Enlace a la página actual (activo) -->
+
+      <li><a href="contacto.html">Contacto</a></li>
+      <!-- Enlace a la página de contacto -->
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Contenido principal de la página -->
+
+    <section id="contacto">
+      <!-- Sección dedicada a la solicitud de presupuesto -->
+
+      <header>
+        <!-- Encabezado de la sección -->
+        <h1>Solicita tu presupuesto</h1>
+        <!-- Título principal -->
+      </header>
+
+      <form>
+        <!-- Formulario para solicitar información -->
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <!-- Campo de texto para el nombre, obligatorio -->
+
+        <label for="email">Correo:</label>
+        <input type="email" id="email" name="email" required>
+        <!-- Campo de correo electrónico, obligatorio -->
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+        <!-- Campo de teléfono, obligatorio -->
+
+        <label for="mensaje">Solicite más información:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+        <!-- Área de texto para el mensaje, obligatorio -->
+
+        <div class="checkbox-privacidad">
+          <!-- Casilla para aceptar la política de privacidad -->
+
+          <input type="checkbox" id="privacidad" name="privacidad" required>
+          <label for="privacidad">
+            He leído y acepto la <a href="#" target="_blank">Política de privacidad</a>
+          </label>
+          <!-- El enlace abre la política de privacidad en una nueva pestaña -->
+        </div>
+
+        <button type="submit">Enviar</button>
+        <!-- Botón para enviar el formulario -->
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <!-- Pie de página -->
+
+    <div class="footer-contenido">
+      <!-- Contenedor principal del footer -->
+
+      <!-- Redes sociales -->
+      <div class="redes-sociales">
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="../images/facebook.png" alt="Facebook">
+        </a>
+
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="../images/instagram.png" alt="Instagram">
+        </a>
+
+        <a href="https://www.twitter.com" target="_blank">
+          <img src="../images/twitter.png" alt="Twitter">
+        </a>
+      </div>
+
+      <!-- Dirección física -->
+      <div class="direccion">
+        <address>2da carrera sur, entre calles 7 y 8</address>
+      </div>
+
+      <!-- Aviso legal -->
+      <div class="aviso-legal">
+        <a href="#">Aviso legal</a>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
